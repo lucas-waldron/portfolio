@@ -1,0 +1,211 @@
+@media (max-width: 767.98px) {
+    .mobile-spacing { 
+        padding-top: 20px;
+        }
+    }
+
+body{
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-full{
+    max-width: 1000px;
+    padding: 50px;
+}
+.icon{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+
+.text-subhead{
+    font-size: 1em;
+    line-height: 50%;
+}
+
+
+.nav{
+    padding-top: 1em;
+}
+
+.nav > .nav-item > a{
+    color: #272727;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ .row{
+    padding: 10px;
+}
+
+.about-page a {
+    font-weight: 500;
+    color: inherit;
+    text-decoration: underline;
+
+}
+
+.projects-page a {
+    font-weight: 500;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.heading-text{
+    padding-top: 1em;
+}
+
+/* NEW CSS FOR PROJECTS */
+
+.project {
+    margin-bottom: 50px;
+}
+
+
+.project__wide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project__wide .content-container video {
+    width: 100%;
+    height: auto;
+
+}
+
+.project__wide .content-container img {
+    width: 100%;
+    height: auto;
+}
+
+.project__wide .content-container .iframe-container {
+    width: 100%;
+    height: auto;
+}
+
+.project__medium {
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project__medium .content-container img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.project__half {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.project__half .flex-item {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox for the box itself */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+}
+
+.project__half.project__half-extension .flex-item:nth-of-type(1) {
+    flex: 1 1 60%;
+}
+
+.project__half.project__half-extension .flex-item:nth-of-type(2) {
+    flex: 1 1 40%;
+}
+
+.project__half .flex-item:nth-of-type(2) {
+    padding-left: 20px;
+}
+
+.project__half .flex-item video, .project__half .flex-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* margin: 0 auto; */
+}
+
+
+.project .mobile-content {
+    display: none;
+}
+
+.project-description { 
+    font-size: 13px;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.video-page {
+    margin-bottom: 50px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 748px) {
+    .project .desktop-content {
+        display: none;
+    }
+
+    .project .mobile-content {
+        display: block;
+    }
+
+    .project__half .flex-item {
+        flex: 1 1 100%; 
+    }
+
+    .project__half .flex-item:nth-of-type(2) {
+        padding-left: 0px;
+    }
+}
+
+/* projct labels TBD */
+
+.project-labels {
+    display: inline-block;
+    color: rgb(32, 32, 32);
+    margin-bottom: 10px;
+}
+
+.project-labels > * {
+    margin-right: 5px;
+}
+
+.project-labels__map {
+    background-color: rgb(102, 192, 136);
+    padding: 2px 4px 3px 4px;
+    border-radius: 2px;
+}
+
+.project-labels__dataviz {
+    background-color: rgb(227, 164, 87);
+    padding: 2px 4px 3px 4px;
+    border-radius: 2px;
+}
