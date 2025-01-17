@@ -108,7 +108,7 @@ h1{
     margin-right: auto;
 }
 
-.project__medium .content-container img {
+.project__medium .content-container img,  .project__medium .content-container video {
     width: 100%;
     height: auto;
     
